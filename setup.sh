@@ -91,8 +91,8 @@ IP6=$(curl -6 -s icanhazip.com | cut -f1-4 -d':')
 
 echo "Internal ip = ${IP4}. Exteranl sub for ip6 = ${IP6}"
 
-FIRST_PORT=19999
-LAST_PORT=22999
+FIRST_PORT=22000
+LAST_PORT=23000
 
 gen_data >$WORKDIR/data.txt
 gen_iptables >$WORKDIR/boot_iptables.sh
@@ -115,4 +115,3 @@ rm -rf /root/setup.sh
 rm -rf /root/3proxy-3proxy-0.8.6
 
 echo "Starting Proxy"
-
