@@ -1,0 +1,22 @@
+Bước 1: Update hệ điều hành và gán IPv6 cho vps
+
++ Update hệ điều hành:
+
+yum update -y
+
+reboot
+
++ Tìm hiểu cách thêm IPv6 đối với dịch vụ VPS của BKNS
+Lệnh thêm IPv6 tự động:
+curl -sO https://hait2810.github.io/createproxyipv6/ipv6.sh && bash ipv6.sh
+
+Bước 2: Cài đặt 3Proxy
+
+Các bạn chạy lệnh sau để cài đặt trong trường hợp proxy cần user và pass:
+wget https://hait2810.github.io/createproxyipv6/setup.sh && chmod +x setup.sh && bash setup.sh  
+
+ 
+
+Bước 3: Lấy thông tin tài khoản
+
+Lấy thông tin tài khoản tại đường dẫn /home/bkns. Mở file proxy.txt để lấy các thông tin đăng nhập.
